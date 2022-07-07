@@ -372,15 +372,15 @@ void printUsage(){
 	printf ("\t\t() restricted base pair\n");
 	printf ("\t\t _ no restriction\n");
 */
-	printf("Usage ./HFold_iterative --s <sequence> --r <structure> [--o </path/to/file>]\n");
+	printf("Usage %s --s <sequence> --r <structure> [--o </path/to/file>]\n", argv[0]);
 	printf("or\n");
-	printf("Usage ./HFold_iterative --i </path/to/file> [--o </path/to/file>]\n");
+	printf("Usage %s --i </path/to/file> [--o </path/to/file>]\n", argv[0]);
 	printf ("  Restricted structure symbols:\n");
 	printf ("    () restricted base pair\n");
 	printf ("    _ no restriction\n");
 	printf("Example:\n");
-	printf("./HFold_iterative --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
-	printf("./HFold_iterative --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
+	printf("%s --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n", argv[0]);
+	printf("%s --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n", argv[0]);
 	printf("Please read README for more details\n");
 }
 

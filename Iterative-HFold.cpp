@@ -364,7 +364,7 @@ int main (int argc, char **argv) {
 
 void printUsage(){
 	/*
-	printf ("\nUsage: HFold_iterative <sequence> <structure>\n");
+	printf ("\nUsage: ./HFold_iterative <sequence> <structure>\n");
 	printf ("Example: ./HFold_iterative \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" \"(____________________________)\" \n");
 	printf ("Or \nUsage: HFold_iterative <path to input file> <path to output file>\n");
 	printf ("Example: ./HFold_iterative \"/home/username/Desktop/inputFile.txt\" -o \"/home/username/Desktop/outFile.txt\" \n");
@@ -372,15 +372,15 @@ void printUsage(){
 	printf ("\t\t() restricted base pair\n");
 	printf ("\t\t _ no restriction\n");
 */
-	printf("Usage %s --s <sequence> --r <structure> [--o </path/to/file>]\n", argv[0]);
+	printf("Usage Iterative-HFold --s <sequence> --r <structure> [--o </path/to/file>]\n");
 	printf("or\n");
-	printf("Usage %s --i </path/to/file> [--o </path/to/file>]\n", argv[0]);
+	printf("Usage Iterative-HFold --i </path/to/file> [--o </path/to/file>]\n");
 	printf ("  Restricted structure symbols:\n");
 	printf ("    () restricted base pair\n");
 	printf ("    _ no restriction\n");
 	printf("Example:\n");
-	printf("%s --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n", argv[0]);
-	printf("%s --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n", argv[0]);
+	printf("Iterative-HFold --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
+	printf("Iterative-HFold --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
 	printf("Please read README for more details\n");
 }
 
